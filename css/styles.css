@@ -1,0 +1,268 @@
+:root {
+          --button-color: #F1C40F;
+          --icon-color: #FF8C00;
+          --body-background-color: #EEEEEE;
+          --pricing-heading-color: #DDDDDD;
+          --text-color: #000;
+          --footer-background-color: #DDDDDD;
+          --header-font-size: 1.6rem;
+}
+
+* {
+          margin: 0;
+          padding: 0;
+}
+
+html {
+          font-size: 62.5%;
+          box-sizing: border-box;
+          overflow: scroll;
+          scroll-behavior: smooth;
+}
+
+body {
+          background-color: var(--body-background-color);
+}
+
+main {
+          position: relative;
+          font-family: 'Lato', sans-serif;
+}
+
+#header {
+          background-color: var(--body-background-color);
+          position: fixed;
+          top: 0;
+          min-height: 7.5rem;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding: 0.5rem 2rem;
+}
+
+.logo {
+          width: 60vw;
+}
+
+#header-img {
+          width: 100%;
+          max-width: 300px;
+          height: auto;
+          display: flex;
+}
+
+#nav-bar {
+          width: 35vw;
+}
+
+#nav-bar ul {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+}
+
+#nav-bar ul li {
+          list-style-type: none;
+}
+
+#nav-bar ul li a {
+          text-decoration: none;
+          color: var(--text-color);
+          font-size: var(--header-font-size);
+}
+
+#features {
+          padding: 10rem 0 9rem;
+          text-align: center;
+}
+
+#features h1 {
+          font-size: 2.4rem;
+          margin-bottom: 2rem;
+          color: var(--text-color);
+}
+
+#email {
+          display: block;
+          width: 100%;
+          max-width: 30rem;
+          margin: 0 auto 1.5rem;
+          padding: .5rem;
+}
+
+#submit {
+          padding: .5rem 1rem;
+          background-color: var(--button-color);
+          color: var(--text-color);
+          border: none;
+          font-size: 1.6rem;
+          font-weight: 800;
+}
+
+.how-it-works {
+          width: 100%;
+          max-width: 100rem;
+          margin: 0 auto;
+}
+
+.flex {
+          display: flex;
+}
+
+.materials-icon, .shipping-icon, .assurance-icon {
+          width: 20vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+}
+
+.materials-icon i, .shipping-icon i, .assurance-icon i {
+          font-size: 4rem;
+          color: var(--icon-color);
+}
+
+.materials-text, .shipping-text, .assurance-text {
+          width: 80vw;
+          height: 12.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+}
+
+.assurance-text h3, .materials-text h3, .shipping-text h3 {
+          font-size: 2.3rem;
+          color: var(--text-color);
+          margin-bottom: .3rem;
+}
+
+.materials-text p, .shipping-text p, .assurance-text p {
+          font-size: 1.6rem;
+          color: var(--text-color);
+}
+
+#iframe {
+          text-align: center;
+          margin-top: 5rem;
+}
+
+#pricing {
+          width: 100%;
+          max-width: 100rem;
+          margin: 6rem auto 0;
+}
+
+.pricing-flex {
+          display: flex;
+}
+
+.tenor-trombone, .bass-trombone, .valve-trombone {
+          width: 100%;
+          max-width: 31rem;
+          margin: 0 auto;
+          text-align: center;
+          border: .1rem solid #000;
+}
+
+.tenor-trombone-heading, .bass-trombone-heading, .valve-trombone-heading {
+          background-color: var(--pricing-heading-color);
+}
+
+.tenor-trombone-heading h2, .bass-trombone-heading h2, .valve-trombone-heading h2 {
+          font-size: 1.6rem;
+          padding: 1.5rem 0;
+}
+
+.main-pricing{
+          font-size: 2.4rem;
+          padding: 1.5rem 0;
+          font-weight: 600;
+}
+
+.tenor-trombone > p, .bass-trombone > p, .valve-trombone > p {
+          font-size: 1.5rem;
+          padding: .8rem 0 ;
+          font-weight: 500;
+}
+
+.tenor-trombone button, .bass-trombone button, .valve-trombone button {
+          margin: 2rem 0 1.5rem;
+          font-size: 1.6rem;
+          padding: .8rem 2rem; 
+          background-color: var(--button-color);
+          border: none;
+}
+#footer {
+          width: 100%;
+          max-width: 100rem;
+          margin: 5rem auto 0;
+          background-color: var(--footer-background-color);
+}
+
+.main-footer {
+          display: flex;
+          flex-direction: column;
+          text-align: end;
+          font-family: 'Lato', sans-serif;
+          padding: 2rem 1.5rem;
+}
+
+#footer ul li {
+          list-style-type: none;
+          display: inline-block;
+          padding: 0 1rem .5rem;
+}
+
+#footer ul li a {
+          text-decoration: none;
+          font-size: 1.6rem;
+          color: var(--text-color);
+}
+
+#footer p {
+          font-size: 1.6rem;
+          color: var(--text-color);
+          font-weight: 300;
+          padding-right: .2rem;
+}
+
+/* MEDIA QUARES */
+
+@media (max-width: 980px) and (min-width: 350px) {
+
+          .pricing-flex {
+                    flex-direction: column;
+          }
+
+          .tenor-trombone, .bass-trombone, .valve-trombone {
+                    margin: 0 auto 2rem;
+          }
+}
+
+@media (max-width: 730px) and (min-width: 350px) {
+          #header{
+                    width: 100%;
+                    margin: 0 auto;
+                    flex-wrap: wrap;
+                    padding: unset !important;
+          }
+          .logo {
+                    width: 100%;
+                    margin-top: 1.5rem;
+          }
+
+          .logo > img {
+                    margin: 0 auto;
+          }
+
+          #nav-bar ul {
+                    flex-direction: column;
+          }
+
+          #nav-bar ul li {
+                    padding: 1rem 0;
+          }
+
+          #features {
+                    padding: 18rem 0 9rem;
+          }
+}
